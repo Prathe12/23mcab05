@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+    <h1 style="text-align: center;">ONLINE EXAMINATION PORTAL</h1>
+    </header>
+    <h3>ABSTRACT</h3>
+    <p>The project work entitled as One Page Online Examination Portal, this is basically
+        for students search for various websites for notes and lectures videos. In order to overcome this
+        kind of issues, the common portal is being created. The database called MYSQL can be used
+        as backend. PYTHON language can be used as a frontend and designs can be done through
+        HTML and CSS.</p>
+        <p>The main objective of this project is to create a common portal for the exams with
+            complete process starting from course assign till result announcement through email. Since,
+            student search in various sites to know the notes, lectures process, details of the exam. In order
+            to save the time of the student this site is to be created. Also it helps the student with materials
+            (Video and Question Paper) to make the exams easier with some practices. For that they need
+            to verify with OTP. Before starting the exam face recognition must and after completing exam
+            the result will be announce through mail for parents and students. This project covers the vast
+            idea of how the student exams with the help of common portal, which can be done through the
+            concept web development for admin, staff and student.
+        </p>
+        <center>
+        <h4>TABLE OF CONTENTS</h4>
+        <table border="5px" style="border-collapse: collapse; background-color: rgb(100, 163, 215);"cellpadding="10px" cellspacing="15px" width="600">
+            <tr>
+                <th>S.NO</th>
+                <th>CONTENTS</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td><a href="#intro">INTRODUCTION</a>
+                <ol type="i"><li><a href="#module">MODULES</a></li>
+                    <li><a href="#moddes">MODULES DESCRIPTION</a></li>
+                </ol></td>
+                
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>
+                    <a href="#sys">SYSTEM CONFIGURATION</a>
+                <ol type="i">
+                    <li><a href="#hard">HARDWARE REQUIREMENTS</a></li>
+                    <li><a href="#soft">SOFTWARE REQUIREMENTS</a></li>
+                    <li><a href="#sfeature">SOFTWARE FEATURES</a></li>
+                    <li><a href="#lfeature">LANGUAGE FEATURES</a></li>
+                </ol></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><a href="#systudy">SYSTEM STUDY</a>
+                    <ol type="i">
+                        <li><a href="#exist">EXISTING SYSTEM </a></li>
+                        <li><a href="#propo">PROPOSED SYSTEM </a></li>
+                    </ol>
+                </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td><a href="#sysdes"> SYSTEM DESIGN AND DEVELOPMENT</a>
+                <ol type="i">
+                    <li><a href="#datades">DATABASE DESIGN</a></li>
+                    <li><a href="#desnot">DESIGN NOTATION</a></li>
+                    <li><a href="#dfd">DFD (DATA FLOW DIAGRAM)</a></li>
+                    <li><a href="#er">ER DIAGRAM</a></li>
+                    <li><a href="#indes">INPUT DESIGN</a></li>
+                    <li><a href="#outdes">OUTPUT DESIGN</a></li>
+                </ol></td>
+            </tr>
+            
+            <tr>
+                <td>5</td>
+                <td><a href="#con">CONCLUSION</a></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td><a href="#scope">SCOPE OF FUTURE ENHANCEMENT</a></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td><a href="#biblo">BIBLOGRAPHY</a></td>
+            </tr>
+        </table>
+        </center>
+      <div>
+        <h3 id="intro">1.INTRODUCTION</h3>
+        <p>This project performs the task of developing a web application that enables the students
+            to write the exam easily. The online examination portal is a web based technology driven way
+            to simply examination activities like defining the exam pattern with question banks, related
+            videos and materials using computer or system in a paperless manner. It has also brought some
+            huge advancements to the conventional assessment system. The new system is more tailored
+            to the individual. It is created in a quick and simple approach. It has made the assessment
+            method entirely automated, accurate and instant.</p>
+            <p>This system handles both objective and descriptive questions. It has also introduced a
+                lots of benefits for the students and staff. Staff can add and view the student details. Staff can
+                post the video material, book material and question paper for students to gain the knowledge.
+                Students can login into the portal and can study the portions using materials and related videos.
+                Students can enter into exam using OTP and face verification. Face camera must be on till the
+                end of the exam. After completing the exam staffs can evaluate the exam and send their marks
+                through mail. The staffs can send the mail for both students as well as parents.</p>
+        <h3 id="module">1.1 MODULES</h3>
+        <p>
+         In this web based online examination portal, there are three modules and those three has their own sub modules. </p>
+         <ul>
+             <li>Admin</li>
+             <li>Staff</li>
+             <li>Student</li>
+         </ul>
+      </div><br>
+      <div>
+        <h3 id="moddes">1.2 MODULES DESCRIPTION</h3>
+        <h4>ADMIN:</h4>
+        <h5>SUB MODULES:</h5>
+        <ul>
+            <li><span>Login:</span> Admin can login his/her personal account using id and password.</li>
+            <li><span>Add Staff:</span> Admin can add the staff with the required details.</li>
+            <li><span>View Staff:</span> Admin can view staff list and also admin has the rights to update/delete the staff details.</li>
+            <li><span>Course:</span> Admin can add and view the list of courses also admin has the rights to update/delete the course details. </li>
+            <li><span>View Student:</span> Admin can also view  student and monitor the process of them</li>
+        </ul>
+      
+        <h4>STAFF:</h4>
+        <h5>SUB MODULES:</h5>
+        <ul>
+            <li><span>Login:</span> Staff can login his/her account using username and password provided by     the admin. </li>
+            <li><span> Course:</span> Staff will view the course details which is allocation for them.</li>
+            <li><span>Add Student:</span> Staff will add the student details along with image, roll number etc.</li>
+            <li><span>View Student:</span> Staff can view student list and also has the rights to update/delete the student details.</li>
+            <li><span>Materials:</span> Staff will add and view materials such as video, question papers and quiz</li>
+            <li><span>Report:</span> Staff view the latest updates for student.</li>
+            <li><span>Mark:</span> Staff can view the mark received by the student and send them mail</li>
+        </ul>
+        <h4>STUDENTS:</h4>
+        <h5>SUB MODULES:</h5>
+        <ul>
+            <li><span>Login:</span> Student can login his/her account after the registration process by using their username and password.</li>
+            <li><span>Profile:</span> Student can update his/her profile</li>
+            <li><span>View Exams:</span> Student can view the exams list added by staff.</li>
+            <li><span>Material:</span> student can view the material like video and previous question paper.</li>
+            <li><span>Exam:</span> Student can get course while entering the exam the face recognition taken place if it is same person it will enter into exam or else it will logout the exam and after complete exam acknowledgment place will received</li>
+            <li><span>Result:</span>Student result will be received through Email and staff view</li>
+        </ul>
+      </div>
+      <div>
+        <h3 id="sys">2.SYSTEM CONFIGURATION</h3>
+        <h4 id="hard">2.1 HARDWARE REQUIREMENTS</h4>
+        <table width="500">
+            <tr>
+                <ul>
+                    <td><li>Processor:</li></td>
+                    <td> I3</td>
+                </ul>
+            </tr>
+            <tr>
+                <ul>
+                    <td><li>Hard disk:</li></td>
+                    <td>500 GB</td>
+                </ul>
+            </tr>
+            <tr>
+                <ul>
+                    <td><li>Mouse:</li></td>
+                    <td> Logitech</td>
+                </ul>
+            </tr>
+            <tr>
+                <ul>
+                    <td><li>RAM:</li></td>
+                    <td>4GB(minimum)</td>
+                </ul>
+            </tr>
+            <tr>
+                <ul>
+                    <td><li>Keyboard:</li></td>
+                    <td>110 keys enhanced</td>
+                </ul>
+            </tr>
+            
+        </table>
+        <div>
+            <h4 id="soft">2.2 SOFTWARE REQUIREMENTS</h4>
+            <table width="300">
+                <tr>
+                    <ul>
+                        <td><li>Front End software:</li></td>
+                        <td>PYTHON</td>
+                    </ul>
+                </tr>
+                <tr>
+                    <ul>
+                        <td><li>Back End database:</li></td>
+                        <td>MYSQL</td>
+                    </ul>
+                </tr>
+                <tr>
+                    <ul>
+                        <td><li>Framework:</li></td>
+                        <td>FLASK</td>
+                    </ul>
+                </tr>
+                <tr>
+                    <ul>
+                        <td><li>Design:</li></td>
+                        <td>HTML,CSS</td>
+                    </ul>
+                </tr>
+                <tr>
+                    <ul>
+                        <td><li>IDE Tool:</li></td>
+                        <td>VSC</td>
+                    </ul>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <h3 id="sfeature">2.3 SOFTWARE FEATURES</h3>
+            <p>Python is a widely used general-purpose, high level programming language. It was initially designed by Guido van Rossum in 1991 and developed by Python Software Foundation. It was mainly developed for emphasis on code readability, and its syntax allows programmers to express concepts in fewer lines of code. Python is a programming language that work quickly and integrate systems more efficiently.</p>
+            <p>There are two major Python versions- Python 2 and Python 3. Both are quite different.
+                Windows: There are many interpreters available freely to run Python scripts like IDLE (Integrated Development Environment) which is installed when user install the python software from http://python.org/
+                Linux: For Linux, Python comes bundled with the Linux.
+                </p>
+        </div>
+        <div>
+            <h3 id="lfeature">2.4 LANGUAGE FEATURES</h3>
+            <h5>Interpreted</h5>
+            <ul>
+                <li>There are no separate compilation and execution steps like C and C++.</li>
+                <li>Directly run the program from the source code.</li>
+                <li>Internally, Python converts the source code into an intermediate form called bytecodes which is then translated into native language of specific computer to run it.</li>
+                <li>No need to worry about linking and loading with libraries, etc.</li>
+            </ul>
+            <h5>Platform Independent</h5>
+            <ul>
+                <li>Python programs can be developed and executed on multiple operating system platforms.</li>
+                <li>Python can be used on Linux, Windows, Macintosh, Solaris and many more.</li>
+            </ul>
+            <h5>Free and Open Source</h5>
+                <ul>
+                    <li> Redistributable High-level Language</li>
+                    <li>In Python, no need to take care about low-level details such as managing the memory used by the program.</li>
+                </ul>
+            <h5>Simple</h5>
+            <ul>
+                <li>Closer to English language, Easy to Learn</li>
+                <li>More emphasis on the solution to the problem rather than the syntax</li>
+            </ul>
+            <h5>Embeddable</h5>
+            <ul>
+                <li>Python can be used within C/C++ program to give scripting capabilities for the program’s users.</li>
+            </ul>
+            <h5>Robust</h5>
+            <ul>
+                <li>Exceptional handling features</li>
+                <li>Memory management techniques in built</li>
+            </ul>
+            <h5>Rich Library Support</h5>
+            <ul>
+                <li>The Python Standard Library is varying vast.</li>
+                <li>Known as the “batteries included” philosophy of Python. It can help do various things involving regular expressions, documentation generation, unit testing, threading, databases, web browsers, CGI, email, XML, HTML, WAV files, cryptography, GUI and many more.</li>
+                <li>Besides the standard library, there are various other high-quality libraries such as the Python Imaging Library which is an amazingly simple image manipulation library.</li>
+            </ul>
+            <h5>Flask Framework</h5>
+            <p>A framework "is a code library that makes a developer's life easier when building reliable, scalable, and maintainable web applications" by providing reusable code or extension for common operations. There are a number of frameworks for Python, including Flask, Tornado, Pyramid, and Django.</p>
+            <h5>APACHE</h5>
+            <p>The Apache HTTP Server, colloquially called Apache is the world's most used web server software. Development of Apache began in early 1995 after work on the NCSA code installed. Apache played a key role in the initial growth of the World Wide Web quickly overtaking NCSA HTTP as the dominant HTTP server, and has remained most popular since April 1996. In 2009, it became the first web server software to serve more than 100 million websites</p>
+            <p>Apache is developed and maintained by an open community of developers under the auspices of the Apache Software Foundation. Most commonly used on a Unix-like system (usually Linux),the software is available for a wide variety of operating systems besides Unix, Microsoft Windows, NetWare, OpenVMS, OS/2, and TPF. Released under the Apache License, Apache is free and open-source software.</p>
+            <h5>MySQL</h5>
+            <p>A database is a separate application that stores a collection of data. Each database has one or more distinct APIs for creating, accessing, managing, searching and replicating the data it holds.</p>
+            <p>Other kinds of data stores can be used, such as files on the file system or large hash tables in memory but data fetching and writing would not be so fast and easy with those types of systems.</p>
+            <p>So nowadays, user use relational database management systems (RDBMS) to store and manage huge volume of data. This is called relational database because all the data is stored into different tables and relations are established using primary keys or other keys known as foreign keys</p> 
+            <h5>MySQL Database</h5>
+            <p>MySQL is a fast, easy-to-use RDBMS being used for many small and big businesses. MySQL is developed, marketed, and supported by MySQL AB, which is a Swedish company. MySQL is becoming so popular because of many good reasons:</p>  
+            <ul>
+                <li>MySQL is released under an open-source license. So user have nothing to pay to use it.</li>
+                <li>MySQL is a very powerful program in its own right. It handles a large subset of the functionality of the most expensive and powerful database packages</li>
+                <li>MySQL uses a standard form of the well-known SQL data language</li>
+                <li>MySQL works on many operating systems and with many languages including PHP, PERL, C, C++, JAVA, etc.</li>
+                <li>MySQL works very quickly and works well even with large data sets</li>
+                <li>MySQL is very friendly to PHP, the most appreciated language for web development</li>
+                <li>MySQL supports large databases, up to 50 million rows or more in a table. The default file size limit for a table is 4GB, but you can increase this (if your operating system can handle it) to a theoretical limit of 8 million terabytes (TB).</li>
+                <li>MySQL is customizable. The open-source GPL license allows programmers to modify the MySQL software to fit their own specific environments.</li>
+            </ul> 
+            <h5>DREAMWEAVER</h5> 
+            <p>Adobe Dreamweaver is a professional HTML editor for designing, coding, and developing websites, web pages, and web applications. Whether you enjoy the control of hand-coding HTML or prefer to work in a visual editing environment, Dreamweaver provides with helpful tools to enhance web creation experience.</p>
+            <p>The visual editing features in Dreamweaver let quickly create pages without writing a line of code. User can view all site elements or assets and drag them from an easy-to-use panel directly into a document. User can streamline the development workflow by creating and editing images in Macromedia Fireworks, then importing them directly into Dreamweaver, or by adding Macromedia Flash objects you create directly in Dreamweaver.</p>
+            <p>Dreamweaver also includes many coding-related tools and features, including code editing tools in the Code view (such as code colouring and tag completion); reference material on HTML, CSS, JavaScript, CFML, ASP, and JSP; and a JavaScript Debugger. Macromedia Roundtrip HTML technology imports the hand-coded HTML documents without reformatting the code; user can then choose to reformat code with preferred formatting style.</p>
+        </div>
+        <div>
+            <h3  id="systudy">3. SYSTEM STUDY</h3>
+            <p>System study is classified into two types</p>
+            <ul>
+                <li>Existing system</li>
+                <li>Proposed system</li>
+            </ul>
+            <h4 id="exist">3.1 EXISTING SYSTEM </h4>
+            <p>The students surf lots and lots of site and end up exhausted and also there won’t be correct information. It is completely waste of time and lack of proper information. To avoid such conflicts, a proper site is being created from knowing the details and writing for the exam and result process.</p>
+            <h5>DISADVANTAGES</h5>
+            <ul>
+                <li>Lack of Information</li>
+                <li>It takes huge time</li>
+            </ul>
+            <h4 id="propo">3.2 PROPOSED SYSTEM</h4>
+            <p>The common portal is being created to overcome the disadvantages stated earlier. Moreover it helps the student to complete whole process starting from exam till result process in a single site.</p>
+            <h5>ADVANTAGES</h5>
+            <ul>
+                <li>Complete set of Information</li>
+                <li>Time saving</li>
+                <li>Whole process in a single site</li>
+            </ul>
+
+        </div>
+        <div>
+            <h3>4.SYSTEM DESIGN AND DEVELOPMENT</h3>
+            <h4>4.1 DATABASE DESIGN</h4>
+            <p>Databases are structures that hold data. The software that enables the flow of data through these structures is called database management system or DBMS. The most widely used system of DBMS is something called RDBMS or Relational DBMS</p>
+            <p>This simply means that the data is stored in tables, moreover. Whatever relationships that exist within the data are store within tables.
+                To put it simply, there are three parts that make a database:
+            </p>
+            <h5>Tables</h5>
+            <p>Tables are a matrix of rows and columns. In databases, it’s the same. Each row is a record, or a unit of data. A record (row) can have several columns or fields. Each field is like an attribute of that record.</p>
+            <h5>Views</h5>
+            <p>These are virtua1 tables, or (a set of) stored queries. At a physical level, the data is stored in data files specific to the DBMS. Examples of modern-day RDBMSs that are wide1y used include Oracle, MySQL, etc. Oracle is the largest commercially available RDBMS and MySQL (earlier acquired by Sun, and subsequently by oracle) is a free and open source RDBMS that is very Well-known.</p>
+            <h3>TABLE</h3>
+            <H3>STAFF</H3>
+            <center>
+            <table border="1"   width="400">
+                <tr>
+                    <th>S.NO</th>
+                    <th>FIELD</th>
+                    <th>TYPE</th>
+                    <th>SIZE</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>id</td>
+                    <td>int</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>staff_name</td>
+                    <td>varchar</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>employee_id</td>
+                    <td>varchar</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>staffemail_id</td>
+                    <td>varchar</td>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>staff_phone_no</td>
+                    <td>int</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>staff_address</td>
+                    <td>varchar</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>staff_photo</td>
+                    <td>staff_department</td>
+                    <td>255</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>staff_department</td>
+                    <td>varchar</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>staff_qualification</td>
+                    <td>varchar</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>subject</td>
+                    <td>varchar</td>
+                    <td>30</td>
+                </tr>
+
+            </table>
+            <table border="1" width="400">
+                <h3>STUDENT</h3>
+                <tr>
+                    <th>S.NO</th>
+                    <th>FIELD</th>
+                    <th>TYPE</th>
+                    <th>SIZE</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>id</td>
+                    <td>int</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>student_name</td>
+                    <td>varchar</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>student_regno</td>
+                    <td>varchar</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>student_email</td>
+                    <td>varchar</td>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>student_phone_no</td>
+                    <td>int</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>student_address</td>
+                    <td>varchar</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>student_parent_name</td>
+                    <td>varchar</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>student_parent_phone_no</td>
+                    <td>int</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>student_photo</td>
+                    <td>varchar</td>
+                    <td>255</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>student_department</td>
+                    <td>varchar</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>student_joining_year</td>
+                    <td>int</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>student_current_year</td>
+                    <td>int</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>student_degree</td>
+                    <td>varchar</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>student_subject</td>
+                    <td>varchar</td>
+                    <td>20</td>
+                </tr>
+            </table>
+            <table border="1px" width="400">
+                <h3>COURSE</h3>
+                <tr>
+                    <th>S.NO</th>
+                    <th>FIELD</th>
+                    <th>TYPE</th>
+                    <th>SIZE</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>id</td>
+                    <td>int</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>course_name</td>
+                    <td>varchar</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>course_code</td>
+                    <td>varchar</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>course_description</td>
+                    <td>varchar</td>
+                    <td>50</td>
+                </tr>
+            </table>
+            <table border="1px" width="400">
+                <h3>VIDEO</h3>
+                <tr>
+                    <th>S.NO</th>
+                    <th>FIELD</th>
+                    <th>TYPE</th>
+                    <th>SIZE</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>id</td>
+                    <td>int</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>video_name</td>
+                    <td>varchar</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>course_id</td>
+                    <td>int</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>video_link</td>
+                    <td>varchar</td>
+                    <td>200</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>material_link</td>
+                    <td>varchar</td>
+                    <td>200</td>
+                </tr>
+            </table>
+            <table border="1" width="400">
+                <h3>QUESTION</h3>
+                <tr>
+                    <th>S.NO</th>
+                    <th>FIELD</th>
+                    <th>TYPE</th>
+                    <th>SIZE</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>module_id</td>
+                    <td>int</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>course_id</td>
+                    <td>int</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>question</td>
+                    <td>varchar</td>
+                    <td>60</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>choice1</td>
+                    <td>varchar</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>choice2</td>
+                    <td>varchar</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>choice3</td>
+                    <td>varchar</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>short_answer</td>
+                    <td>varchar</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>fillups</td>
+                    <td>varchar</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>answer</td>
+                    <td>varchar</td>
+                    <td>50</td>
+                </tr>
+            
+            </table>
+            <table border="1px" width="400">
+                <h3>RESULT</h3>
+                <tr>
+                    <th>S.NO</th>
+                    <th>FIELD</th>
+                    <th>TYPE</th>
+                    <th>SIZE</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>course_id</td>
+                    <td>int</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>question_id</td>
+                    <td>int</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>email</td>
+                    <td>varchar</td>
+                    <td>40</td>
+                </tr>
+            </table>
+            </center>
+            <div>
+                <h3 id="desnot">4.2 DESIGN NOTATION</h3>
+                <h4 id="dfd">DATA FLOW DIAGRAM</h4>
+                <p>A data flow diagram is graphical tool used to describe and analyse movement of data through a system.  These are the central tool and the basis from which the other components are developed.  The transformation of data from input to output, through processed, may be described logically and independently of physical components associated with the system.  These are known as the logical data flow diagrams.  The physical data flow diagrams show the actual implements and movement of data between people, departments and workstations.  A full description of a system actually consists of a set of data flow diagrams.</p>
+                <p>Using two familiar notations Yourdon, Gane and Sarson notation develops the data flow diagrams. Each component in a DFD is labeled with a descriptive name.  Process is further identified with a number that will be used for identification purpose.  The development of DFD’S is done in several levels.  Each process in lower level diagrams can be broken down into a more detailed DFD in the next level.  The lop-level diagram is often called context diagram. It consists a single process bit, which plays vital role in studying the current system.  The process in the context level diagram is exploded into other process at the first level DFD.</p>
+                <p>The idea behind the explosion of a process into more process is that understanding at one level of detail is exploded into greater detail at the next level.  This is done until further explosion is necessary and an adequate amount of detail is described for analyst to understand the process.</p>
+                <p>Larry Constantine first developed the DFD as a way of expressing system requirements in a graphical from, this lead to the modular design.  
+                    A DFD is also known as a “Bubble Chart” has the purpose of clarifying system requirements and identifying major transformations that will become programs in system design.  So it is the starting point of the design to the lowest level of detail.  A DFD consists of a series of bubbles joined by data flows in the system.</p>
+
+            </div>
+
+                <h4 id="er">ER DIAGRAM</h4>
+                <p>The relation upon the system is structure through a conceptual ER-Diagram, which not only specifics the existential entities but also the standard relations through which the system exists and the cardinalities that are necessary for the system state to continue.</p>
+                <p>The entity Relationship Diagram (ERD) depicts the relationship between the data objects.</p>
+                <p>The ERD is the notation that is used to conduct the date modeling activity the attributes of each data object noted is the ERD can be described resign a data object descriptions.</p>
+        </div>
+        <div>
+            <h3 id="indes">INPUT DESIGN</h3>
+            <p>The input design is the link that ties the information system into the world of its users. It is a process of converting user-originated inputs to a computer based format. Input data are collected and organized into a group of similar data. Once identified, appropriate input media are selected for processing.</p>
+            <p>	The goal of designing input data is to make entry easy, logical and free form errors. In input data design, the design source document that capture the data and then select the media used to enter them into the computer. The input forms are developed in a user-friendly way so that a layman also can easily understand everything. Menus are provided to users and different icons are designed so the proposed system design looks decorative</p>
+            <p>Input design is the part of the overall system design. Source documents initiate a processing cycle as soon as they are entered into the system through the keyboard. A source should be logical and easy to understand.</p>
+            <center>
+                <figure>
+                    <figcaption>HOME PAGE</figcaption>
+            <img src="C:\Users\Yogesh\Pictures\Screenshots/first.png" width="600" height="400">
+                </figure>
+                <figure>
+                    <figcaption>ADMIN PAGE</figcaption>
+                    <img src="C:\Users\Yogesh\Pictures\Screenshots\second.png" width="600" height="400">
+                </figure>
+                <figure>
+                    <figcaption>STAFF PAGE</figcaption>
+                    <img src="C:\Users\Yogesh\Pictures\Screenshots\third.png" width="600" height="400">
+                </figure>
+                <figure>
+                    <figcaption>STUDENT PAGE</figcaption>
+                    <img src="C:\Users\Yogesh\Pictures\Screenshots\four.png" width="600" height="400">
+                </figure>
+
+            </center>
+            
+        </div>
+        <div>
+            <h3 id="outdes">OUTPUT DESIGN</h3>
+            <P>Output forms are also designed in a specific manner as per the user requirement. Results are formatted to enhance clarity. Depending on the user the system would generate appropriate output. The output forms are designed in such a way that the entire user required data is presented.</P>
+            <p>While designing an output, the system analyst must accomplish the following</p>
+            <ul>
+                <li>Determine what information to present.</li>
+                <li>Decide whether to display, print or speak information and select the output medium</li>
+                <li>Arrange the presentation of information in an acceptable form.</li>
+                <li>Decide how to distribute the output to intended users.</li>
+            </ul>
+            <center>
+            <figure>
+                <figcaption>OTP FOR QUIZ</figcaption>
+                <img src="C:\Users\Yogesh\Pictures\Screenshots\five.png" width="600" height="400">
+            </figure>
+            <figure>
+                <figcaption>ENTER OTP</figcaption>
+                <img src="C:\Users\Yogesh\Pictures\Screenshots\six.png" width="600" height="400">
+            </figure>
+            <figure>
+                <figcaption>VIEW QUIZ</figcaption>
+                <img src="C:\Users\Yogesh\Pictures\Screenshots\seven.png" width="600" height="400">
+            </figure>
+            <figure>
+                <figcaption>EXAM COMPLETED</figcaption>
+                <img src="C:\Users\Yogesh\Pictures\Screenshots\eight.png" width="600" height="400">
+            </figure>
+            <figure>
+                <figcaption>VIEW RESULT</figcaption>
+                <img src="C:\Users\Yogesh\Pictures\Screenshots\nine.png" width="600" height="400">
+            </figure>
+            </center>
+        </div>
+        <div>
+            <h3 id="con">5. CONCLUSION</h3>
+            <p>Using an open source language gives us more flexibility, but at the same time it required more time to be programmed. The Online Examination portal can be easily adopted by  universities  and institutions  in  order to  make  the  exam  more  secure  and more  flexible. The  system  is  subdivided  into  two  main subsystems (student and staff) that are designed to give  the  system  maximum  benefit  by  demonstrating carefully  each  subsystem  service. The staff's functions  are  clearly identified  to  be  able to  manipulate student's information such as add (register),  delete  and managing  the  exam  materials  and  content  such  as  add, delete  questions,  Thus  the  project is  easy  and flexible because for future maintenance and development because each subsystem can be handled separately without influence on other system.
+            </p>
+        </div>
+        <div>
+            <h3 id="scope">6. SCOPE FOR FUTURE ENHANCEMENT</h3>
+            <P>Online Examination Portal is widely used as compared to other exams. It can be used in private institutes as well as educational institution. It is user friendly web base application it can be used anywhere and anytime. There are large numbers of chances in which software may produce wrong results or may display invalid data. These bugs must be identified and solved for improving quality of software. So in future there will be a development on more secure software by using advanced technologies.</P>
+
+        </div>
+        <div>
+            <h3 id="biblo">7. BIBLOGRAPHY</h3>
+            <h4>BOOKS</h4>
+                <ol>
+                    <li>DuBois. P, “MySQL” 3rd Edition, Publisher: Sams, 2005</li>
+                    <li>John M Zelle, “Python Programming”, 3rd Edition, Publisher: Ingram short title, 2016</li>
+                    <li>Mark Lutz, “Learning Python” 5th Edition, Publisher: O’Reilly Media Inc, 2013</li>
+                    <li>Michael Kofler, “The Definitive Guide to MySQL 5” 3rd Edition ,Publisher: Apress, 2005</li>
+                    <li>Ulluman, “ Guide MySQL ”, 2nd Edition ,Publisher: Peachpit Press ,2006</li>
+                </ol>
+    
+        </div>
+        
+        
+      </div>
+</body>
+</html>
